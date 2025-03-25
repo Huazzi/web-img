@@ -1,47 +1,48 @@
+
 # 骤雨重山图床
 
-> 在现代互联网环境中，快速稳定的图片访问是提升用户体验的重要因素之一。本文将介绍如何利用Cloudflare Pages部署稳定的无限图床Imgur，实现图片上传和访问，并进一步通过WordPress的WP.COM全球图片缓存进行加速，提高图片加载速度。可用于免费图片托管解决方案，Flickr 等替代品。
+English | [English](https://github.com/uxiaohan/ZYCS-IMG/blob/main/README_CN.md)
 
-[English](https://github.com/uxiaohan/ZYCS-IMG) | 简体中文
+> In the modern Internet environment, fast and stable image access is one of the important factors to improve user experience. This article will introduce how to use Cloudflare Pages to deploy a stable unlimited image bed Imgur, realize image upload and access, and further accelerate through WordPress's WP.COM global image cache to improve image loading speed. It can be used for free image hosting solutions, alternatives such as Flickr.
 
-## 简介
+## Introduction
 
-- [Cloudflare Pages](https://pages.cloudflare.com/) 是一个强大的静态网站托管服务，结合了 Cloudflare 的全球 CDN（内容分发网络）优势。
+- [Cloudflare Pages](https://pages.cloudflare.com/) is a powerful static website hosting service that combines the advantages of Cloudflare's global CDN (content distribution network).
 
-- [Imgur](https://imgur.com/) 是一个免费优质的图床。
+- [Imgur](https://imgur.com/) is a A free high-quality image hosting.
 
-- [WordPress 的全球图片缓存](https://01.wp.com/) 是一个高效的 CDN 服务，专门用于加速 WordPress 托管的图片内容。它利用全球分布的节点，将图片缓存并提供快速访问。
+- [WordPress's global image cache](https://01.wp.com/) is an efficient CDN service specifically designed to accelerate WordPress-hosted image content. It uses globally distributed nodes to cache images and provide fast access.
 
-- [Cloudflare CDN（内容分发网络）](https://www.cloudflare.com/zh-cn/application-services/products/cdn/)是由Cloudflare提供的服务，旨在加速和保护和加速全球网络应用程序。
+- [Cloudflare CDN (Content Delivery Network)](https://www.cloudflare.com/zh-cn/application-services/products/cdn/) is a service provided by Cloudflare that is designed to accelerate and protect global web applications.
 
-### 页面
+### Page
 
-![骤雨重山图床](https://uxiaohan.github.io/v2/2024/07/1721639712.png)
+![Sudden Rain and Heavy Mountains Image Hosting](https://uxiaohan.github.io/v2/2024/12/1733291366.webp)
 
-[点击体验Demo](https://wp-cdn.4ce.cn/)
+[Click to experience Demo](https://wp-cdn.4ce.cn/)
 
-## 如何部署
+## How to deploy
 
-- 1、准备一个 Cloudflare 账户
-- 2、Fork 本仓库，自由修改`App.vue`和`index.html`文件中的文案
-- 3、登录`Cloudflare Dashboard`打开`Workers 和 Pages`创建`Pages`
-- 4、`连接到Git`选择`Github`或`Gitlab`中你刚刚Fork的项目，点击开始设置
-- 5、只需要修改`框架预设`为`Vue`即可，点击保存并部署，即可部署成功并投入使用
+- 1. Prepare a Cloudflare account
+- 2. Fork this repository and freely modify the text in the `App.vue` and `index.html` files
+- 3. Log in to `Cloudflare Dashboard`, open `Workers and Pages`, and create `Pages`
+- 4. `Connect to Git`, select the project you just forked in `Github` or `Gitlab`, and click Start Setup
+- 5. Just change `framework preset` to `Vue`, click Save and Deploy, and the deployment will be successful and put into use
 
-**图片步骤**
+**Picture steps**
 
-![骤雨重山图床](https://uxiaohan.github.io/v2/2024/07/1721640641.png)
-![骤雨重山图床](https://uxiaohan.github.io/v2/2024/07/1721640649.png)
-![骤雨重山图床](https://uxiaohan.github.io/v2/2024/07/1721640656.png)
+![Sudden Rain and Heavy Mountains Picture Bed](https://uxiaohan.github.io/v2/2024/07/1721640641.png)
+![Sudden Rain and Heavy Mountains Picture Bed](https://uxiaohan.github.io/v2/2024/07/1721640649.png)
+![Sudden Rain and Heavy Mountains Picture Bed](https://uxiaohan.github.io/v2/2024/07/1721640656.png)
 
-### 特点
+### Features
 
-- 无限图片储存数量，你可以上传不限数量的图片到`Imgur`
+- Unlimited image storage, you can upload an unlimited number of images to `Imgur`
 
-- 无需购买服务器，托管于`Cloudflare Pages`上，每天10万次的请求
+- No need to purchase a server, hosted on `Cloudflare Pages`, 100,000 requests per day
 
-- 无需购买域名，可以使用`Cloudflare Pages` 提供的`*.pages.dev`的免费二级域名，同时也支持绑定自定义域名
+- No need to buy a domain name, you can use the free second-level domain name `*.pages.dev` provided by `Cloudflare Pages`, and it also supports binding custom domain names
 
-### 项目地址
+### Project address
 
 [ZYCS-IMG - Github](https://github.com/uxiaohan/ZYCS-IMG)
